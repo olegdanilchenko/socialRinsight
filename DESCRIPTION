@@ -1,0 +1,9 @@
+Package: socialRinsight
+Type: Package
+Title: Tools for the analytics professional to scrape data from social media APIs
+Version: 1.0
+Date: 2014-06-14
+Author: Mason Gallo
+Maintainer: Mason Gallo <masonagallo@gmail.com>
+Imports: httr, jsonlite
+License: MIT

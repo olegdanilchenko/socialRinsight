@@ -3,6 +3,7 @@
 # end date in the form "2014-02-01" along with
 # token generated from FB graph explorer
 # returns a cleaned date frame
+# @export
 
 
 fbPage <- function(brand, start, end, token) {
@@ -36,6 +37,7 @@ fbPage <- function(brand, start, end, token) {
   
 }
 
+# @internal
 page_loop <- function(main_frame, vector, timing, brand, start, end, token){
   start <- as.Date(start) + 1
   end <- as.Date(end) + 1

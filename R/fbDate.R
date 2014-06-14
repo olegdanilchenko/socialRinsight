@@ -1,4 +1,5 @@
 #scrubs dates to align with FB format
+# @internal
 
 fbDate <- function(start, end) {
   rawDate <- seq.Date(as.Date(start), as.Date(end), by='day')

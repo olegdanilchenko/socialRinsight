@@ -3,6 +3,9 @@
 # end date in the form "2014-01-15" along with
 # token generated from FB graph explorer
 # returns a cleaned date frame
+# @export
+
+
 
 fbPost <- function(brand, start, end, token){
   if(as.Date(end) - as.Date(start) > 14){
@@ -26,7 +29,8 @@ fbPost <- function(brand, start, end, token){
 
 
 
-#remove cover photos from post IDs
+# remove cover photos from post IDs
+# @internal
 cleanIDs <- function(v, v2){
   clean <- ""
   for (i in seq(1, length(v))){
@@ -37,7 +41,8 @@ cleanIDs <- function(v, v2){
   clean[-1]
 }
 
-#vector is strings of each metric needed
+# vector is strings of each metric needed
+# @internal
 post_loop <- function(post_id, token){
   
   url <- paste('https://graph.facebook.com/v2.0/', post_id, '?', 

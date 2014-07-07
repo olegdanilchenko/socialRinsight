@@ -12,13 +12,14 @@ socialRinsight is a tool for analytics professionals to quickly scrape social in
 
 
 
+Examples:
 
-Pull page-level data on Facebook for your brand, examplebrand, for March 2014:
+Pull page level data from Facebook for March 2014:
     
-    fbpage("examplebrand", "2014-03-01", "2014-04-01", access_token)
+    fbPage("examplebrand", "2014-03-01", "2014-04-01", access_token)
     
 
-Pull post level data for your brand, examplebrand, for the first 2 weeks of March 2014:
+Pull post level data for the first 2 weeks of March 2014:
     
     fbPost("examplebrand", "2014-03-01", "2014-03-15", access_token)
 
